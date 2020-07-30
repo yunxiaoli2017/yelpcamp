@@ -35,7 +35,7 @@ router.post("/", middleware.isLoggedIn, function(req, res){
   var newCampground = req.body.campground;
   geocoder.geocode(newCampground.location, function(err, data){
       if (err || !data.length) {
-    	  req.flash('error', 'Invalid address');
+    	  req.flash('error', 'Invalid address: ' + newCampground.location);
     	  return res.redirect('back');
       }
       var lat = data[0].latitude;
