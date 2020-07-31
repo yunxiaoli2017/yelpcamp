@@ -132,9 +132,9 @@ router.delete("/:id", middleware.checkCampgroundOwnership, function(req, res){
 	Campground.findByIdAndRemove(req.params.id, function(err){
 		if(err){
 			req.flash('error', err.message);
-			res.redirect("campgrounds");
+			res.redirect("/campgrounds");
 		} else {
-			res.redirect("campgrounds");
+			res.redirect("/campgrounds");
 		}
 	});
 });
