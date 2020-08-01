@@ -50,6 +50,9 @@ app.use(function(req, res, next){
 	next();
 });
 
+// clear Campground and User database
+// seedDB();
+
 // naming convention RESTFUL routes
 // REST - mapping between html routes and CRUD (Create, Read, Update, Destroy)
 
