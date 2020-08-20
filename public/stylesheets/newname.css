@@ -2,6 +2,10 @@
 	background: purple;
 } */
 
+.navbar {
+	background-color: green;
+}
+
 .delete-form {
 	display: inline;
 }
@@ -10,4 +14,65 @@
 #map {
 	height: 400px;
 	width: 100%;
+}
+
+a.navbar-brand {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: 400;
+	font-size: 1.5em;
+}
+
+.jumbotron {
+  /* background-image: url('https://images.unsplash.com/photo-1510414148252-a2c44206f94b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'); */
+  background-image: url(https://images.unsplash.com/photo-1561708749-3119dbe2a2fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2875&q=80);
+  background-size: cover;
+  /* background-color: #e50914; */
+  height: 100%;
+  font-size: 1.4em;
+}
+
+.jumbotron h1 {
+	font-size: 3em;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: 400;
+	color: #303030;
+}
+
+.jumbotron h1 span {
+	font-size: 1em;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: 700;
+	color: #303030;
+}
+
+.jumbotron p {
+	font-size: 1.1em;
+	color: #e0e0e0;
+}
+
+img.card-img-top {
+    float: left;
+    object-fit: cover;
+}
+
+.card-title.index-page {
+	font-size: 2.1em;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: 400;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.card-text.index-page {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0.75, 0), rgba(0, 0, 0, 0));
 }

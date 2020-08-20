@@ -1,27 +1,29 @@
 <%- include("../partials/header") %>
 
-<div class="container">
+<div class="container p-0">
 
   <header class="jumbotron">
-    <div class="container">
-      <h1>Welcome to YelpCamp!</h1>
+    <div class="container pl-5">
+      <h1>Welcome to <span>YelpCamp!</span></h1>
       <p>View our hand-picked campgrounds from all over the world.</p>
+		
+	  <hr>
       <p>
-        <a class="btn btn-primary btn-large" href="/campgrounds/new">Add New Campground</a>
+        <a class="btn btn-success btn-large" href="/campgrounds/new">Add New Campground</a>
       </p>
 	
 	  <p>
 		<form action="/campgrounds" method="GET" class="form-inline">
 		  <div class="form-group">
 			<input type="text" name="search" placeholder="Campground search..." class="form-control">
-			<input type="submit" value="Search" class="btn btn-default">
+			<input type="submit" value="Search" class="btn btn-primary">
 		  </div>
 		</form>
 	  </p>
     </div>
   </header>
 
-  <div class="row" style="display: flex; flex-wrap: wrap;">
+  <div class="row equal justify-content-between" style="display: flex; flex-wrap: wrap; margin-left: -17px; margin-right: -17px;">
 	<div class="col-md-12">
 		<% if (noMatch !== undefined) { %>
 			<h3>
@@ -30,12 +32,14 @@
 		<% } %>
 	</div>
     <% campgrounds.forEach(function(campground){ %>
-      <div class="col-md-3 col-sm-6">
-        <div class="card">
-          <img class="card-img-top p-1" src="<%= campground.image %>" alt="Image for <%= campground.name %>">
-          <div class="card-body">
-            <h5 class="card-title"><%= campground.name %></h5>
-            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+      <div class="col-sm-6 col-md-4 col-lg-3 pb-3 pt-0 px-3 mb-3">
+        <div class="card h-100">
+          <img class="card-img-top p-0 h-50" src="<%= campground.image %>" alt="Image for <%= campground.name %>">
+		  <div style="height: 10px"></div>
+		  <div class="card-body">
+            <h5 class="card-title index-page w-75"><%= campground.name %></h5>
+            <p class="card-text index-page w-75"><%= campground.description %></p> 
+			<hr>
 			<p>
 			  <a href="/campgrounds/<%= campground._id %>" class="btn btn-primary">More Info</a>
 			</p>
