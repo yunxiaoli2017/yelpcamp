@@ -2,6 +2,8 @@
 
 > A Node.js web application project from the Udemy course - [The Web Developer Bootcamp by Colt Steele](https://www.udemy.com/the-web-developer-bootcamp/)
 
+A Yelp style website for campgrounds that supports user authentication, posting campsites/comments, and editing previous submissions.
+
 ## Live Demo
 
 To see the app in action, go to [https://stark-coast-89683.herokuapp.com/](https://stark-coast-89683.herokuapp.com/)
