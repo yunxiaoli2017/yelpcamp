@@ -8,20 +8,11 @@ A Yelp style website for campgrounds that supports user authentication, posting 
 
 To see the app in action, go to [https://stark-coast-89683.herokuapp.com/](https://stark-coast-89683.herokuapp.com/)
 
-### Framework
+### Framework & Database
 
 * [express](https://expressjs.com/)
-
-### Database
-
 * [mongoDB](https://www.mongodb.com/)
 * [mongoose](http://mongoosejs.com/)
-
-### Platforms
-
-* [Cloudinary](https://cloudinary.com/)
-* [Heroku](https://www.heroku.com/)
-* [goormide](https://ide.goorm.io/)
 
 ### Features
 
@@ -60,6 +51,12 @@ To see the app in action, go to [https://stark-coast-89683.herokuapp.com/](https
 * Responsive web design and dynamic web page
 
   * Built with [Bootstrap](https://getbootstrap.com/), [ejs](http://ejs.co/)
+  
+### Platforms
+
+* [Cloudinary](https://cloudinary.com/)
+* [Heroku](https://www.heroku.com/)
+* [goormide](https://ide.goorm.io/)
 
 ## License
 
