@@ -1,18 +1,15 @@
 # YelpCamp
 
-> A Node.js web application project from the Udemy course - [The Web Developer Bootcamp by Colt Steele](https://www.udemy.com/the-web-developer-bootcamp/)
-
 A Yelp style website for campgrounds that supports user authentication, posting campsites/comments, and editing previous submissions.
 
-## Live Demo
-
-To see the app in action, go to [https://stark-coast-89683.herokuapp.com/](https://stark-coast-89683.herokuapp.com/)
+To see the app in action, go to [https://yelp-camp-by-yunxiao.herokuapp.com/](https://yelp-camp-by-yunxiao.herokuapp.com/)
 
 ### Framework & Database
 
-* [express](https://expressjs.com/)
-* [mongoDB](https://www.mongodb.com/)
-* [mongoose](http://mongoosejs.com/)
+* [Node.js](https://nodejs.org/en/)
+* [Express](https://expressjs.com/)
+* [MongoDB](https://www.mongodb.com/)
+* [Mongoose](http://mongoosejs.com/)
 
 ### Features
 
@@ -24,25 +21,25 @@ To see the app in action, go to [https://stark-coast-89683.herokuapp.com/](https
 
   * One cannot edit or delete posts and comments created by other users
   
-  * Built with [moment](https://momentjs.com/), [passport](http://www.passportjs.org/), [passport-local](https://github.com/jaredhanson/passport-local#passport-local), [express-session](https://github.com/expressjs/session#express-session)
+  * Built with [passport](http://www.passportjs.org/), [passport-local](https://github.com/jaredhanson/passport-local#passport-local), [express-session](https://github.com/expressjs/session#express-session)
 
 * Manage campground posts with basic functionalities:
 
   * Create, edit and delete posts and comments
   
-  * Display createdAt info for posts and comments
+  * Display createdAt time info for posts and comments
 
   * Upload campground photos (saved to Cloudinary)
 
-  * Display campground location on Google Maps 
+  * Display campground location with Google Maps 
   
   * Search existing campgrounds
   
-  * Built with [cloudinary](https://cloudinary.com/), [multer](https://www.npmjs.com/package/multer), [Google Maps APIs](https://developers.google.com/maps/), [geocoder](https://github.com/wyattdanger/geocoder#geocoder)
+  * Built with [moment](https://momentjs.com/), [cloudinary](https://cloudinary.com/), [multer](https://www.npmjs.com/package/multer), [Google Maps APIs](https://developers.google.com/maps/), [geocoder](https://github.com/wyattdanger/geocoder#geocoder)
 
 * Manage user account with basic functionalities:
 
-  * Password reset via email
+  * Password forgot/reset via email
 
   * Flash messages responding to user's interactions with the app
   
